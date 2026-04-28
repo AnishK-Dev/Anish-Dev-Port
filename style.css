@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(24, 24, 43);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 60px;
+    background-color: #0d0d39;
+    position: relative;
+}
+
+.nav-brand {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 227);
+    font-size: 1.04rem;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+}
+
+main {
+    min-height: 100vh;
+}
+
+main hr {
+    border: 0;
+    background-color: rgb(60, 60, 129);
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+    padding: 0 40px;
+    gap: 40px;
+}
+
+.leftSection {
+    width: 45%;
+    font-size: clamp(24px, 4vw, 50px);
+    color: white;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.leftSection .btn {
+    background-color: rgb(157, 55, 157);
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.leftSection .btn:hover {
+    font-size: 17px;
+}
+
+.rightSection {
+    width: 40%;
+}
+
+.rightSection img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.purple {
+    color: rgb(157, 55, 157);
+}
+
+#element {
+    color: rgb(157, 55, 157);
+}
+
+.secondSection {
+    max-width: 90vw;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.secondSection h1 {
+    font-size: clamp(28px, 5vw, 50px);
+    margin-bottom: 40px;
+}
+
+.text-gray {
+    color: gray;
+    font-size: 1rem;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.work-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 24px;
+    width: 280px;
+    text-align: left;
+}
+
+.image-top {
+    width: 40px;
+    margin-bottom: 12px;
+}
+
+.vertical-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.vertical-dsce {
+    font-size: 12px;
+    color: gray;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #281f28;
+    padding: 50px 20px 20px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-first h2 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footer-second ul,
+.footer-third ul,
+.footer-fourth ul {
+    list-style: none;
+    color: gray;
+    line-height: 2;
+}
+
+.footer-rights {
+    text-align: center;
+    color: gray;
+    font-size: 0.85rem;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .right {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #0d0d39;
+        padding: 20px;
+        z-index: 999;
+    }
+
+    .right.open {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Stack hero section */
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+        margin: 40px 0;
+        padding: 0 20px;
+    }
+
+    .leftSection,
+    .rightSection {
+        width: 100%;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .rightSection img {
+        max-width: 280px;
+        margin: auto;
+        display: block;
+    }
+
+    main hr {
+        margin: 30px 30px;
+    }
+}
+
+/* Mobile (max 480px) */
+@media (max-width: 480px) {
+    .nav-brand {
+        font-size: 1rem;
+    }
+
+    .work-item {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .leftSection .btn {
+        width: 100%;
+        font-size: 14px;
+    }
+}

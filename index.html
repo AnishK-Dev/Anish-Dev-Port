@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anish Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-brand">Anish Kumar's Portfolio</div>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <div class="right" id="navMenu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About us</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Anish</span>
+                <div>and I am a passionate</div>
+                <div>Web Developer</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="devimgs.png" alt="Developer Image">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="work-item">
+                    <img class="image-top" src="HTML5_logo.png" alt="HTML5">
+                    <div class="vertical-title">HTML Developer (2019-2021)</div>
+                    <div class="vertical-dsce">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quasi
+                        perferendis voluptatem unde laudantium adipisci vero inventore natus? Illo quasi</div>
+                </div>
+                <div class="work-item">
+                    <img class="image-top" src="X_logo.png" alt="Twitter/X">
+                    <div class="vertical-title">NODE.js Developer - Twitter/X (2021-2024)</div>
+                    <div class="vertical-dsce">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quasi
+                        perferendis voluptatem unde laudantium adipisci vero inventore natus? Illo quasi</div>
+                </div>
+                <div class="work-item">
+                    <img class="image-top" src="Instagram-Logo.png" alt="Instagram">
+                    <div class="vertical-title">Software Developer - Instagram (2024-2026)</div>
+                    <div class="vertical-dsce">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quasi
+                        perferendis voluptatem unde laudantium adipisci vero inventore natus? Illo quasi</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h2>Anish's Portfolio</h2>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.Anish's_portfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script src="server.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Expert in DSA', 'Backend Programmer'],
+            typeSpeed: 50,
+        });
+
+        function toggleMenu() {
+            const menu = document.getElementById("navMenu");
+            menu.classList.toggle("open");
+        }
+    </script>
+</body>
+
+</html>
